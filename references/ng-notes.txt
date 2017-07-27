@@ -1,0 +1,14 @@
+template_url vs template
+
+@component( {
+template: '<p> {{myobj.location }} </p>
+})
+
+export class AppComponent {
+myobj = {
+	gender:'male', age:33, location:'usa'
+}
+
+ngif
+<ng-template #template name></
+<img bing.src={{imglog }}
