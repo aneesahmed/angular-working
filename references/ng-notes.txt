@@ -12,3 +12,10 @@ myobj = {
 ngif
 <ng-template #template name></
 <img bing.src={{imglog }}
+
+how to create component
+how to use component
+how to create/user directives
+pipes
+
+npm install -g json-server
