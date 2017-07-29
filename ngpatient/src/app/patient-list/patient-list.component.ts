@@ -3,18 +3,28 @@ import {PatientlistService} from '../patientlist.service';
 
 @Component({
   selector: 'app-patient-list',
-  template: '<h1>Patient list component </h1>',
-  //templateUrl: './patient-list.component.html',
+  templateUrl: './patient-list.component.html',
   styleUrls: ['./patient-list.component.css']
 })
 export class PatientListComponent implements OnInit {
 
-   
-  constructor() {
-    
-   }
-
+ 
+  patientList;
   ngOnInit() {
+    //this.getAllPatients();
   }
+
+  constructor(private patientListService : PatientlistService) {
+     //this.patientList = ['pat1', 'pat2', 'pat3','pat4'] ;
+     this.patientList = patientListService.getPatientList();
+   }
+   //getAllPatients() {
+   //  this.patientListService.getPatientsAPI()
+   //    .subscribe(
+   //       data => console.log(JSON.stringify(data)),
+   //       error  => console.log('Server Error')
+   //    );
+   //}
+ 
 
 }

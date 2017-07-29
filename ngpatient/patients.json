@@ -1,0 +1,24 @@
+{
+  "patients": 
+    [
+      {
+        "id": 1,
+        "name": "patient 1",
+        "bloodgroup": "B+tv"
+      },
+      [
+        {
+          "id": 2,
+          "title": "patients 2",
+          "author": "O-tv"
+        }
+      ],
+      [
+        {
+          "id": 3,
+          "title": "patient 3",
+          "author": "O+tiv"
+        }
+      ]
+    ]
+}
