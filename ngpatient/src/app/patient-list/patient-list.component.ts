@@ -11,20 +11,20 @@ export class PatientListComponent implements OnInit {
  
   patientList;
   ngOnInit() {
-    //this.getAllPatients();
+    this.getAllPatients();
   }
 
   constructor(private patientListService : PatientlistService) {
      //this.patientList = ['pat1', 'pat2', 'pat3','pat4'] ;
-     this.patientList = patientListService.getPatientList();
+     //this.patientList = patientListService.getPatientList();
    }
-   //getAllPatients() {
-   //  this.patientListService.getPatientsAPI()
-   //    .subscribe(
-   //       data => console.log(JSON.stringify(data)),
-   //       error  => console.log('Server Error')
-   //    );
-   //}
+   getAllPatients() {
+     this.patientListService.getPatientsAPI()
+       .subscribe(
+          data => console.log(JSON.stringify(data)),
+          error  => console.log('Server Error')
+       );
+   }
  
 
 }
