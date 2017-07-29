@@ -6,19 +6,17 @@
         "name": "patient 1",
         "bloodgroup": "B+tv"
       },
-      [
         {
           "id": 2,
-          "title": "patients 2",
-          "author": "O-tv"
+          "name": "patients 2",
+          "bloodgroup": "O-tv"
         }
-      ],
-      [
+      ,
         {
           "id": 3,
-          "title": "patient 3",
-          "author": "O+tiv"
+          "name": "patient 3",
+          "bloodgroup": "O+tiv"
         }
-      ]
+      
     ]
 }

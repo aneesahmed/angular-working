@@ -21,7 +21,7 @@ export class PatientListComponent implements OnInit {
    getAllPatients() {
      this.patientListService.getPatientsAPI()
        .subscribe(
-          data => console.log(JSON.stringify(data)),
+          data => this.patientList=data,
           error  => console.log('Server Error')
        );
    }

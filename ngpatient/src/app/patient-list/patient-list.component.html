@@ -1,9 +1,10 @@
-<h1>Patient LIst </h1>
-<ul>
-  <li >testing</li>
-</ul>  
 
+  
 
- <ul>
-  <li *ngFor="let patient of patientList" >{{patient}}</li>
-</ul>
+ <table class="table-bordered table-striped" width="80%" align="center">
+  <tr><td colspan="3" align="center"><h2> Patient LIst</h2></td></tr>
+  <tr><td>Patient Id</td><td> Patient Name</td><td>Blood Group</td></tr>
+  <tr *ngFor="let patient of patientList" >
+    <td>{{patient.id}}</td><td> {{patient.name}}</td><td> {{patient.bloodgroup}}</td>
+  </tr>  
+</table>
